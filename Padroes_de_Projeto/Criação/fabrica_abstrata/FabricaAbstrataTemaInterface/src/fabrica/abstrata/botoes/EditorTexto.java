@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import fabrica.abstrata.botoes.*;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -21,8 +22,12 @@ import javax.swing.JButton;
  */
 public class EditorTexto extends javax.swing.JFrame {
 
-    private JButton ok;
-    private JButton cancel;
+     private JButton ok;
+     private JButton cancel;
+     private FabricaAbstrataBotoes fabrica;
+     
+    
+    
     
     /**
      * Creates new form EditorTexto
@@ -42,13 +47,22 @@ public class EditorTexto extends javax.swing.JFrame {
     private void addButtons(String tema){
         
         if(tema.equalsIgnoreCase("tema1")){
+           
+            fabrica = new FabricaBotoesIcones();
+            
+            cancel = fabrica.criaBotaoCancel();
+            ok = fabrica.criaBotaoOK();
+            
+            
         }else if(tema.equalsIgnoreCase("tema2")){
+            
+            fabrica = new FabricaPadrao();
+            
+            cancel = fabrica.criaBotaoCancel();
+            ok = fabrica.criaBotaoOK();
         }                
                 
-        cancel = new JButton();
-        ok = new JButton();
-        ok.setText("OK");
-        cancel.setText("Cancel");
+        
         
                 
         jLabel1 = new javax.swing.JLabel();
@@ -56,7 +70,7 @@ public class EditorTexto extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        cancel.setText("Cancelar");
+        //cancel.setText("Cancelar");
         jLabel1.setText("Descrição:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
