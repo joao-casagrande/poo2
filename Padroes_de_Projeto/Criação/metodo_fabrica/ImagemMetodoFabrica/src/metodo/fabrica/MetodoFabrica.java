@@ -11,6 +11,9 @@ public class MetodoFabrica {
         
         formato = FabricaFormato.gerarFormato("png");
         formato.gera();
+        
+        formato = FabricaFormato.gerarFormato("bmp");
+        formato.gera();
     }    
 }
 
