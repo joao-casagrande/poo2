@@ -17,7 +17,7 @@ public class DiretorRefeicao {
         refeicaoBuilder.prepadaHamburgerCarne();
         return novaRefeicao;        
     }     
-    public Refeicao preparaVegetariana(String sabor, String tipoBebida){        
+    public Refeicao preparaVegetariana(String sabor, String tipoBebida, String batata){        
         Refeicao novaRefeicao = new Refeicao();
         VegetarianoBuilder refeicaoBuilder = new VegetarianoBuilder(novaRefeicao);        
         if(tipoBebida.equalsIgnoreCase("refrigerante"))

@@ -15,6 +15,10 @@ public abstract class RefeicaoBuilder {
        
     public void adicionarRefrigerante(String sabor){
         refeicao.setBebida(new Refrigerante(sabor));        
-    }   
+    }
+    
+    public void preparaBatata(){
+        refeicao.setBatata(new Batata());        
+    }
     
 }

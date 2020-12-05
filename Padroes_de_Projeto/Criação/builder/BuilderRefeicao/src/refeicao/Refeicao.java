@@ -9,6 +9,7 @@ public class Refeicao {
     
     private Hamburger hamburger;
     private Bebida bebida;
+    private Batata batata;
 
     public Hamburger getHamburger() {
         return hamburger;
@@ -21,5 +22,14 @@ public class Refeicao {
     }
     public void setBebida(Bebida bebida) {
         this.bebida = bebida;
-    }       
+    }
+    
+     public Batata getBatata() {
+        return batata;
+    }
+    
+    public void setBatata(Batata batata) {
+        this.batata = batata;
+    }
+    
 }
