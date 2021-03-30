@@ -68,7 +68,7 @@ public class ComponentePastaComposite extends ComponenteBase {
     }
     
     @Override
-    public StringBuilder ShowFileTree() {
+    public StringBuilder showFileTree() {
         
         int indent = 0;
         StringBuilder sb = new StringBuilder();

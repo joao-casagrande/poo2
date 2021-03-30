@@ -52,7 +52,7 @@ public class Main {
             }
         }
         
-        StringBuilder sb =  pastaRoot.ShowFileTree();
+        StringBuilder sb =  pastaRoot.showFileTree();
         File file = new File(".//src//main//java//com//joaoa//exerciciocompositearquivos//tree.txt");
         BufferedWriter writer = null;
         try {
