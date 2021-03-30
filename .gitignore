@@ -64,3 +64,6 @@ RevisaoJava/Andar.class
 /Streams_e_Serializacao/LeituraCSV/build//Padroes_de_Projeto/Estrutural/Adapter/ClienteExterno/nbproject/private/
 *.properties
 *.xml
+Padroes_de_Projeto/Comportamental/Estrategia/MoverArquivos/nbproject/project.properties
+Padroes_de_Projeto/Comportamental/Estrategia/MoverArquivos/nbproject/genfiles.properties
+Padroes_de_Projeto/Comportamental/Estrategia/MoverArquivos/nbproject/build-impl.xml
